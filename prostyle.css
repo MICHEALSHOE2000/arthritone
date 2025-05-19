@@ -1,0 +1,321 @@
+
+/* Custom styles to match the image */
+:root {
+    --mount-sinai-blue: #00a3e0; /* Approximate blue color from the image */
+    --mount-sinai-dark-blue: #008cbf; /* Slightly darker blue for hover/active */
+    --mount-sinai-gray-text: #6c757d; /* Gray text color */
+}
+
+body {
+    font-family: sans-serif; /* Use a common sans-serif font */
+}
+
+/* Top Bar Styling */
+.top-bar {
+    font-size: 0.85rem;
+    background-color: #f8f9fa; /* Light background */
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef; /* Subtle bottom border */
+}
+
+.top-bar .nav-link {
+    padding: 0.25rem 0.5rem;
+    color: var(--mount-sinai-gray-text);
+    text-decoration: none;
+}
+
+.top-bar .nav-link:hover {
+    color: #333; /* Darker on hover */
+    text-decoration: underline;
+}
+
+.top-bar .nav-link i {
+    margin-right: 5px;
+    color: var(--mount-sinai-blue); /* Icon color */
+}
+
+
+/* Specific styling for the blue navigation bar below the main one */
+.bottom-navbar {
+    background-color: var(--mount-sinai-blue); /* Blue background */
+    padding: 0; /* Remove default padding */
+}
+
+.bottom-navbar .nav-link {
+    color: #ffffff; /* White text */
+    font-weight: 500;
+    padding: 1rem 1rem; /* Adjust padding */
+    text-align: center; /* Center text in links */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bottom-navbar .nav-link:hover {
+    background-color: var(--mount-sinai-dark-blue); /* Darker blue on hover */
+}
+
+ .bottom-navbar .nav-item.active .nav-link {
+     background-color: var(--mount-sinai-dark-blue); /* Darker blue for active item */
+ }
+
+
+.bottom-navbar .search-link {
+     background-color: var(--mount-sinai-dark-blue); /* Darker blue background for search */
+     padding: 1rem 1.5rem; /* Adjust padding */
+     cursor: pointer;
+}
+ .bottom-navbar .search-link:hover {
+      background-color: #007bb5; /* Even darker blue on hover */
+ }
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    background-color: #ffffff; /* White background */
+    padding: 0.75rem 0;
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.breadcrumb-item a {
+    color: var(--mount-sinai-blue); /* Blue link color */
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--mount-sinai-gray-text); /* Gray for active item */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) { /* Below large breakpoint */
+    .top-bar .navbar-nav {
+        flex-direction: column; /* Stack top bar links vertically */
+        align-items: center;
+    }
+    .top-bar .nav-link {
+        padding: 0.25rem 0; /* Adjust padding when stacked */
+    }
+
+    .main-navbar .navbar-nav {
+         text-align: center; /* Center main nav links in collapsed menu */
+    }
+     .main-navbar .nav-link {
+          padding: 0.5rem 1rem; /* Adjust padding in collapsed menu */
+     }
+
+    .bottom-navbar .navbar-nav {
+        flex-direction: column; /* Stack bottom nav links vertically */
+        align-items: stretch; /* Stretch links to fill width */
+    }
+    .bottom-navbar .nav-link {
+         text-align: left; /* Align text to left when stacked */
+    }
+     .bottom-navbar .search-link {
+         text-align: left; /* Align text to left when stacked */
+     }
+}
+
+/* Add these to your existing style tag */
+.display-4 {
+line-height: 1.2;
+}
+
+.lead {
+color: var(--mount-sinai-dark-blue);
+}
+
+
+.rounded-3 {
+border-radius: 0.5rem!important;
+}
+
+.btn-lg {
+min-width: 200px;
+}
+
+.badge {
+font-weight: 500;
+padding: 0.35em 0.65em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.display-4 {
+font-size: 2.5rem;
+}
+
+.btn-lg {
+width: 100%;
+margin-bottom: 1rem;
+}
+}
+
+/* Add to your existing CSS */
+.text-muted {
+color: #6c757d!important;
+}
+
+.small {
+font-size: 0.875em;
+}
+
+.rounded-circle {
+border-radius: 50%!important;
+}
+
+.d-flex {
+display: flex!important;
+}
+
+.align-items-center {
+align-items: center!important;
+}
+
+.justify-content-center {
+justify-content: center!important;
+}
+
+
+/* Add to your existing CSS */
+.object-fit-cover {
+object-fit: cover;
+}
+
+.flex-shrink-0 {
+flex-shrink: 0;
+}
+
+/* Add these to your existing CSS */
+.bg-light {
+background-color: #f8f9fa!important;
+}
+
+.shadow-sm {
+box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.lead {
+font-size: 1.25rem;
+font-weight: 300;
+}
+
+/* Add to existing CSS */
+.bg-opacity-10 {
+background-color: rgba(var(--bs-danger-rgb), 0.1)!important;
+}
+
+.shadow-lg {
+box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.fst-italic {
+font-style: italic!important;
+}
+
+.border-5 {
+border-width: 5px!important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.fs-5 {
+font-size: 1rem!important;
+}
+}
+
+/* Footer Specific Styles */
+footer a {
+transition: color 0.3s ease;
+}
+
+footer a:hover {
+color: var(--mount-sinai-blue) !important;
+}
+
+.footer-brand img {
+transition: transform 0.3s ease;
+}
+
+.footer-brand:hover img {
+transform: scale(1.05);
+}
+
+.social-icons a {
+display: inline-block;
+width: 36px;
+height: 36px;
+line-height: 36px;
+text-align: center;
+background-color: rgba(255,255,255,0.1);
+border-radius: 50%;
+transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+background-color: var(--mount-sinai-blue);
+transform: translateY(-3px);
+}
+
+.border-secondary {
+border-color: rgba(255,255,255,0.1) !important;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.offer-highlight {
+  background: #fff3cd;
+  padding: 1rem;
+  border-left: 5px solid #ffc107;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--mount-sinai-dark-blue);
+}
+
+.testimonial {
+  font-style: italic;
+  color: #555;
+  background: #f1f1f1;
+  border-left: 5px solid var(--mount-sinai-blue);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050; /* above most Bootstrap elements */
+    border-radius: 50px;
+    padding: 12px 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+
+
