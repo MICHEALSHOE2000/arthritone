@@ -731,15 +731,20 @@ EXERCISE REGULARLY ? <strong>EVERRRRYBODY TALKING ABOUT HYDROTHERAPY....LET ME G
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                  <div class="form-floating mb-3">
-                                      <select class="form-select rounded-3" required>
-                                          <option value="" selected disabled>Select Quantity</option>
-                                          <option value="">1 Bottle 25000</option>
-                                          <option value="">2 Bottles 45000</option>
-                                          <option value="">3 Bottles 60000 recommended</option>
-                                      </select>
-                                  </div>
-                              </div>
+                            <div class="form-floating mb-3">
+                            <select class="form-select rounded-3" name="quantity" required>
+                            <option value="" selected disabled>Select Quantity</option>
+                                <option value="1 Bottle 25000">1 Bottle 25000</option>
+                                <option value="2 Bottles 45000">2 Bottles 45000</option>
+                            <option value="3 Bottles 60000 recommended">3 Bottles 60000 recommended</option>
+                            </select>
+                        <label class="text-muted">Quantity</label>
+                                <div class="invalid-feedback">
+                            Please select a quantity
+                            </div>
+                            </div>
+                                </div>
+
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
                                     <select class="form-select rounded-3" id="state" name="state" required>
